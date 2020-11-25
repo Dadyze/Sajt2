@@ -1,0 +1,520 @@
+body{
+    font:14px/1.5 helvetica;
+    box-sizing: border-box;
+    color:white;
+    margin:0;
+    padding:0;
+}
+
+.section{
+    padding:20px 0;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+button{
+    border-radius: 50px;
+    border:1px solid white;
+    background: transparent;
+    color:white;
+    width: 150px;
+    height: 40px;
+    font-size:16px;
+    cursor: pointer;
+}
+
+button:hover{
+    color:black;
+    padding:10px;
+}
+
+
+/* Prvi Section */
+
+
+#prviSection{
+    background-image: linear-gradient(to right,#3498eb,lightblue);
+    position:relative;
+}
+#prviSection::after{
+    background: #3498eb;
+    width: 100%;
+    height:100%;
+    content:'';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    transform-origin: top right;
+    transform:skewY(4deg);
+
+}
+
+#prviSection #rightMain img{
+    height:400px;
+    margin-left:100px;
+
+}
+#glavniNav{
+    display: flex;
+    margin-top:10px;
+}
+
+#glavniNav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left:-40px;
+}
+
+#glavniNav ul li a{
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    font-size:20px;
+}
+
+#glavniNav ul li a:hover, 
+#glavniNav ul li a.active{
+    background-color: white;
+    color:black;
+    border-radius: 50px;    
+}
+.dugmad{
+    display:flex;
+    justify-content:flex-end;
+    width:50%;
+}
+
+.dugmad button{
+    font-size:20px;
+    margin-top:10px;
+    margin-left:20px;   
+}
+
+#main{
+    margin-top: 50px;
+    display: flex;
+}
+
+#main #leftMain{
+    width:50%;
+}
+
+#main #leftMain > h1{
+    font-size:44px;
+}
+
+#main #leftMain > p{
+    font-size: 13px;
+    margin-bottom:20px;
+}
+
+#main #rightMain{
+    width: 50%;
+    margin-left: 20px;
+    
+}
+
+ #bijeli{
+     background-color: white;
+     color:black;
+     margin-left:20px;
+ }
+
+ #bijeli:hover{
+     color:#3498eb;
+ }
+
+
+    /* Drugi Section */
+
+
+ #DrugiSection{
+     background-color: white;
+     color:black;
+ }
+
+ #DrugiSection ul{
+     list-style-type: none;
+     display:flex;
+     justify-content: space-between;
+ }
+ #DrugiSection ul li{
+     display: flex;
+     align-items: center;
+ }
+
+ #DrugiSection ul li img{
+     width: 75px;
+     height: auto;
+ }
+
+ #DrugiSection #prviB {
+    margin-top:10px;
+    margin-bottom:10px;
+    border: 1px solid #3498eb;
+    color: #3498eb;
+}
+
+
+#DrugiSection #prviB:hover{
+    color:black;
+}
+
+#DrugiSection #drugiB{
+    border:none;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:darkgrey;
+}
+
+#DrugiSection #DrugiMain > h1{
+    color: #3498eb;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+    /* Treci Section */
+
+
+
+#TreciSection{
+    background-image: linear-gradient(to right,#3498eb,lightblue);
+}
+
+#TreciSection nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#TreciSection nav ul li a{
+    padding: 10px 30px;
+    text-decoration: none;
+    color:white;
+    margin-left:40px;
+}
+
+#TreciSection nav ul li a:hover{
+    color:black;
+}
+
+#glavniB{
+    border-radius: 20px;
+    border:1px solid white;
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    font-size:16px;
+}
+
+
+#TreciSection .TreciMain  > h1{
+    padding-top:10px;
+    font-size:32px;
+    font-weight:600;
+}
+
+#TreciSection .TreciMain > button{
+    margin-top: 15px;
+    background-color: white;
+    color: #3498eb;
+}
+#TreciSection .TreciMain > button:hover{
+    color:black;
+}
+
+    /* Cetvrti Section */
+
+
+#CetvrtiSection{
+    background-color:#e3e2de;
+}
+.CetvrtiMain >h1{
+    margin-top:20px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #3498eb;
+}
+.CetvrtiMain  button{
+    border:2px solid  #3498eb;
+    background-color:white;
+    color:#3498eb;
+    width:200px; 
+    margin-bottom:40px;
+}
+.CetvrtiMain button:hover{
+    color:black;
+}
+.CetvrtiMain #email{
+    border:2px solid  #3498eb;
+    background-color:white;
+    color:#3498eb;
+    width: 300px;
+    height: 35px; 
+    margin-bottom:40px;
+    font-size:16px;
+    padding-left:15px;
+    border-radius: 50px;
+
+}
+.CetvrtiMain #email::placeholder{
+    font-size:16px;
+    padding-left:15px;
+}
+
+    /* Peti Section */
+
+
+#PetiSection{
+    background-color: white;
+}
+    
+#PetiSection nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+    
+#PetiSection nav ul li a{
+    padding: 10px 30px;
+    text-decoration: none;
+    color:rgb(141, 131, 131);
+    margin-left:40px;
+}
+
+#PetiSection nav ul li a:hover{
+    color:black;
+}
+    
+#glavniC{
+    border-radius: 50px;
+    border:1px solid #3498eb;
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    font-size:16px;
+    color:#3498eb;
+}
+
+#PetiSection .PetiMain  > h1{
+    padding-top:10px;
+    font-size:32px;
+    font-weight:600;
+    color: #3498eb;
+}
+
+#PetiSection .PetiMain > p {
+    color:black;
+ }
+  
+ 
+    /* Sesti Section */
+ 
+    
+#SestiSection{
+    background-color:#3498eb;
+}
+
+#SestiSection div > h1{
+    font-size:48px;
+    font-weight:400;
+}
+#SestiSection .container {
+    overflow: hidden;
+    display: flex;
+}
+
+
+#SestiSection .forma{
+    width: 50%;
+    padding-left: 20px;
+}
+#SestiSection .mapa{
+    width: 50%;
+}
+
+#map {
+    height: 600px;
+  }
+#SestiSection .forma input{
+    width: 100%;
+    height: 30px;
+    display:block;
+    margin-bottom: 15px;
+    background-color: #2e74c9;
+    border:none;
+}
+
+#SestiSection input::placeholder{
+    color:white;
+    padding-left:10px;
+}
+
+#SestiSection textarea{
+    width: 100%;
+    background-color: #2e74c9;
+    color:white;
+}
+
+#SestiSection textarea::placeholder{
+    color:white;
+    padding-left:10px;
+}
+    
+#SestiSection > button{
+    border:1px solid white;
+    color:white;
+}
+
+#SestiSection .mapa{
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+
+    }
+    h1,p{
+        text-align: center;
+    }
+    
+    #glavniNav {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #glavniNav ul{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+
+    }
+    #main {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #main #leftMain{
+        width: 100%;
+    }
+    #main #leftMain > h1 {
+        font-size: 38px;
+    }
+    #main #rightMain {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dugmadContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    #DrugiSection ul li {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    #DrugiSection ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #glavniNav ul li a {
+      
+        font-size: 16px;
+    }
+
+    .dugmad {
+        margin-top: 20px;
+    }
+
+    .dugmad button {
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .dugmad button:first-child {
+        margin-right: 20px;
+    }
+
+    #prviSection #rightMain img {
+        height: 400px;
+        margin-left: 0;
+    }
+
+    #TreciSection nav ul li a {
+        padding: 10px;
+        margin-left:0px;
+    }
+
+    #TreciSection nav ul {
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    #CetvrtiSection #email {
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    #CetvrtiSection button {
+        margin: 0px auto;   
+        display: block;
+    }
+
+    #PetiSection nav ul li a {
+        padding: 10px;
+        margin-left:0;
+    }
+    #PetiSection nav ul {
+        justify-content: space-between;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #SestiSection .container {
+        flex-wrap: wrap;
+    }
+    #SestiSection .mapa {
+        width: 100%;
+    }
+    #SestiSection .forma {
+        width: 100%;
+        padding-left: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 900px) {
+    #prviSection #rightMain img {
+        height: 400px;
+        margin-left:0px;
+    }
+
+    .dugmadContainer{
+        display: flex;
+    }
+
+    #DrugiSection ul {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+  }
+      
